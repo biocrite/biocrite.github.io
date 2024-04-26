@@ -8,8 +8,11 @@ body, .wrapper {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
 /* Colorear las secciones */
+.wrapper {
+    background-color: green;
+}
+
 header,
 aside,
 footer {
@@ -50,6 +53,7 @@ iframe {
     float: right;
     background-color: white;
     margin: auto;
+    padding: 0;
 }
 
 aside {
