@@ -82,7 +82,7 @@ footer {
 }
 
 /*Media Query para computadoras */
-@media screen and (min-width: 800px) {
+@media screen and (width > 800px) {
     body {
         background-color: white !important;
     }
