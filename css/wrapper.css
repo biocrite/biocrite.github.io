@@ -1,10 +1,14 @@
-body {
-    background-color: aqua;
+html, * {
+    box-sizing: border-box;
+}
+
+body, .container {
     max-width: 800px;
     margin: auto;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 /* Colorear las secciones */
 header,
@@ -25,12 +29,14 @@ footer {
     padding: 5px 10px;
 }
 
-.navmenu a, footer a {
+.navmenu a,
+footer a {
     text-decoration: none;
     color: black;
 }
 
-.navmenu a:hover, footer a:hover{
+.navmenu a:hover,
+footer a:hover {
     color: red;
 }
 
@@ -61,27 +67,36 @@ footer {
 }
 
 
-/* Media Query para celulares */
-@media screen and (width <= 480px) {
+/* Media Query: celulares */
+@media screen and (width <=480px) {
     body {
-        background-color: greenyellow !important;
+        background-color: greenyellow;
     }
+
     .navmenu {
         width: 100%;
         margin: 0;
     }
+
     aside {
         display: none;
     }
+
     iframe {
         width: 100%;
     }
 }
 
-
-/*Media Query para computadoras */
-@media screen and (width >= 800px) {
+/*Media Query: tablets */
+@media screen and (480px < width < 800px) {
     body {
-        background-color: white !important;
+        background-color: aqua;
+    }
+}
+
+/*Media Query: computadoras */
+@media screen and (width >=800px) {
+    body {
+        background-color: white;
     }
 }
