@@ -1,0 +1,16 @@
+@import url("wrapper.css");
+
+body {
+    background-color: white;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+h2,
+figure {
+    text-align: center;
+}
+
