@@ -11,7 +11,7 @@
             margin: 20px 5px;
         }
 
-        .formitem input {
+        .formitem input, .formitem textarea {
             display: block;
         }
 
@@ -50,7 +50,7 @@
                 <legend>¿Cómo nos conociste?</legend>
                 <div>
                     <input type="radio" id="internet" name="origen" value="internet" required />
-                    <label for="internet">Vi algo en Internet.</label>
+                    <label for="internet">Vi algo en internet.</label>
                 </div>
 
                 <div>
@@ -60,13 +60,19 @@
 
                 <div>
                     <input type="radio" id="no-recuerdo" name="origen" value="no-recuerdo" />
-                    <label for="no-recuerdo">No Recuerdo.</label>
+                    <label for="no-recuerdo">No recuerdo.</label>
                 </div>
 
             </fieldset>
-        </div>
 
         </div>
+
+        <div class="formitem">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" required rows="4" cols="50"></textarea>
+            <span class="obligatorymarker">Campo Obligatorio</span>
+        </div>
+
         <div class="formbuttons">
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
