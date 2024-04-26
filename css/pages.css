@@ -1,7 +1,7 @@
 @import url("wrapper.css");
 
 body {
-    background-color: white;
+    background-color: white!important;
 }
 
 img {
