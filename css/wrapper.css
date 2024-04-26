@@ -8,7 +8,7 @@ body, .wrapper {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* Colorear las secciones */
+/* Colorear el wrapper y las secciones para distinguir mejor  */
 .wrapper {
     background-color: green;
 }
@@ -17,8 +17,9 @@ header,
 aside,
 footer {
     background-color: rgb(255, 255, 0);
-    margin: 10px 0;
+    border: 1px dashed black;
 }
+
 
 /* Navegación */
 .navmenu {
