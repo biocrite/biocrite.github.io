@@ -1,0 +1,89 @@
+body {
+    background-color: aqua;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Colorear las secciones */
+header,
+aside,
+footer {
+    background-color: rgb(255, 255, 0);
+    margin: 10px 0;
+}
+
+/* Navegación */
+.navmenu {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    margin: 0 15%;
+    padding: 5px 10px;
+}
+
+.navmenu a, footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.navmenu a:hover, footer a:hover{
+    color: red;
+}
+
+/* Main */
+main {
+    display: flex;
+}
+
+iframe {
+    width: 85%;
+    min-height: 80vh;
+    float: right;
+    background-color: white;
+    margin: auto;
+}
+
+aside {
+    float: left;
+    width: 10%;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 10px;
+    padding-right: 25px;
+    font-size: smaller;
+}
+
+
+/* Media Query para celulares */
+@media screen and (width < 480px) {
+    body {
+        background-color: greenyellow !important;
+    }
+
+    .navmenu {
+        width: 100%;
+        margin: 0;
+    }
+
+    aside {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+/*Media Query para computadoras */
+@media screen and (min-width: 800px) {
+    body {
+        background-color: white !important;
+    }
+}
