@@ -81,7 +81,7 @@ footer {
     }
 }
 
-@media screen and (width >480px) {
+@media screen and (width > 480px) {
     aside div.container{
         text-align: right;
         vertical-align: top;
