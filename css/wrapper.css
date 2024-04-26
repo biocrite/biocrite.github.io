@@ -2,7 +2,7 @@ html, * {
     box-sizing: border-box;
 }
 
-body, .body-container {
+body, .wrapper {
     max-width: 800px;
     margin: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
