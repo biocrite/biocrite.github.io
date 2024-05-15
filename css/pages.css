@@ -20,6 +20,7 @@ figure {
 
 figure img {
     border-radius: 30px;
+    margin-bottom: 15px;
 }
 
 figure img:not(.dimmerImage) {
@@ -27,7 +28,7 @@ figure img:not(.dimmerImage) {
     max-height: 40vh;
 }
 
-figure img:not(.dimmerImage):hover {
+.dimmereable:hover {
     transform: scale(1.05);
     transition-duration: 800ms;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
