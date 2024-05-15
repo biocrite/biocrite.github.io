@@ -26,20 +26,24 @@ figure {
     margin: 0 auto;
     text-align: center;
 }
+
 figure img {
     border-radius: 30px;
     margin-bottom: 15px;
 }
+
 figure img:not(.dimmerImage) {
     max-width: 90%;
     max-height: 40vh;
 }
+
 .dimmereable:hover {
     transform: scale(1.05);
     transition-duration: 800ms;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
+
 .dimmerImage {
     max-width: 90%;
 }
@@ -59,10 +63,20 @@ figure img:not(.dimmerImage) {
 .datoDisplayer {
     min-height: 200px;
     margin: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.datoDisplayer .apellido {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-shadow: -1px -1px 0 white,
+    1px -1px 0 darkblue,
+    -1px 1px 0 black,
+    1px 1px 0 darkred;
 }
 
 
