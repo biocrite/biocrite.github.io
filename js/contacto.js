@@ -16,7 +16,7 @@ function valideishan() {
     var origen = document.getElementById("origen").value;
     var mensaje = document.getElementById("mensaje").value;
     if (nombre != '' && apellido != '' && email != '' && mensaje != '' && origen != '') {
-        window.location = "formularioenviado.html";
+        window.location = "/pages/formulario-enviado.html";
     } else {
         mostrarObligatorios();
     }

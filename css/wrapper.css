@@ -11,12 +11,12 @@
     min-height: 100vh;
     margin: auto;
     font-family: "Roboto Slab", serif;
-    font-weight: 350;
+    font-weight: 380;
     font-style: normal;
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 1px;
-    text-align: justify;
+    text-align: left;
 }
 
 /*-----------------*/
@@ -122,7 +122,7 @@ main {
 /* MEDIA QUERY */
 /*-------------*/
 
-/* celulares */
+/* >>>>>>> celulares */
 @media screen and (width <=480px) {
     body {
         background-color: greenyellow;
@@ -135,13 +135,13 @@ main {
 
 }
 
-/* tablets */
+/* >>>>>>> tablets */
 @media screen and (480px < width < 800px) {}
 
-/* computadoras */
+/* >>>>>>> computadoras */
 @media screen and (width >=800px) {}
 
-/* tablets & computadoras */
+/* >>>>>>> tablets & computadoras */
 @media screen and (600px < width) {
     .onlySmallScreens {
         display: none;
