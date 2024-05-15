@@ -1,0 +1,48 @@
+@import url("pages.css");
+
+.galeriaWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeriaWrapper figure {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeriaWrapper .imageholder {
+    flex: 1;
+    height: auto;
+    width: auto;
+    align-content: center;
+}
+
+/*-------------*/
+/* MEDIA QUERY */
+/*-------------*/
+
+/* >>>>>>> celulares */
+@media screen and (width <=480px) {
+}
+
+/* >>>>>>> tablets */
+@media screen and (480px < width < 800px) {
+
+}
+
+/* >>>>>>> computadoras */
+@media screen and (width >=800px) {
+
+}
+
+/* >>>>>>> tablets & computadoras */
+@media screen and (800px < width) {
+    .galeriaWrapper {
+        display: flex;
+    }
+    .galeriaWrapper figure {
+        width: 40%;
+    }
+}
