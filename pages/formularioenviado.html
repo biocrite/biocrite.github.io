@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulario Enviado</title>
+
+    <link rel="stylesheet" href="../css/pages.css">
+
+</head>
+
+<body onLoad="setTimeout('koalaPhoneHome()', 3000)">
+
+
+
+
+    <div class="wrapper" id="wrapper">
+
+        <header data-src="/wrapper/header.html"></header>
+
+
+        <main>
+            <h1>El formulario ha sido enviado.</h1>
+            <figure>
+                <img src="../img/koala-phone-home.png" />
+                <figcaption>Te redrigimos al inicio.</figcaption>
+            </figure>
+        </main>
+
+
+        <footer data-src="/wrapper/footer.html"></footer>
+
+    </div>
+
+    <script src="/js/includer.js" />
+    </script>
+    <script>
+        function koalaPhoneHome() {
+            window.location = "inicio.html";
+        }
+    </script>
+
+</body>
+
+</html>

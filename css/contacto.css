@@ -1,0 +1,38 @@
+@import url("pages.css");
+
+.formitem {
+    margin: 20px 5px;
+}
+
+.form,
+.form div {
+    text-align: center;
+    display: block;
+}
+
+.form div * {
+    margin: 10px auto;
+}
+
+.formitem input[type=text],
+.formitem input[type=email],
+.formitem textarea {
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    font-size:18px;
+    min-width: 45%;
+}
+.formitem textarea {
+    min-width: 70%;
+}
+.formitem label,
+legend {
+    font-weight: bolder;
+}
+
+.obligatorymarker {
+    color: red;
+    font-size: smaller;
+    display: none;
+}
