@@ -5,13 +5,54 @@ body {
     padding: 10px;
 }
 
-img {
-    max-width:90%;
-    height: auto;
+h1, h2, p {
+    margin: 20px 20px;
 }
 
+h2 {
+    color: darkgray;
+}
+
+figure {
+    display: block;
+    margin: 0 auto;
+}
+
+figure img {
+    border-radius: 30px;
+}
+
+figure img:not(.dimmerImage) {
+    max-width:90%;
+    max-height: 40vh;
+}
+
+figure img:not(.dimmerImage):hover {
+    transform: scale(1.05);
+    transition-duration: 800ms;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.dimmerImage {
+    max-width: 90%;
+}
+
+h1,
 h2,
 figure {
     text-align: center;
 }
 
+.btn-img {
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 10px!important;
+}
+
+.btn-img:hover {
+    border-color: green;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition-duration: 400ms;
+}
