@@ -27,6 +27,10 @@
     text-align: center;
 }
 
+.headerImage {
+    width: 100%;
+}
+
 
 /* Mobile First */
 .onlyBigScreens {
@@ -55,7 +59,7 @@
 footer a {
     text-decoration: none;
     color: black;
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
 .navmenu a:hover,
@@ -157,11 +161,11 @@ main {
         background-color: unset;
         align-items: unset;
         text-align: unset;
-        font-size: unset;
+        font-size: smaller;
         display: flex!important;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 650px;
+        max-width: 100%;
         justify-content: space-evenly;
         padding: 5px;
     }

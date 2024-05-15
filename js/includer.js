@@ -78,7 +78,7 @@ document.getElementById("wrapper").appendChild(dimmerBG);
 
 //función para mostrar dimmer con photo
 function lightbox() {
-    dimmerBG.innerHTML = `<figure><img class="dimmerImage" src="${this.src}" z-index="300" /></figure><p> [X] </p>`;
+    dimmerBG.innerHTML = `<figure><img class="dimmerImage" src="${this.src}" z-index="300" ></figure><p> [X] </p>`;
     dimmerBG.style.visibility = "visible";
 }
 

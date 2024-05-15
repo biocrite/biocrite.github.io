@@ -13,8 +13,9 @@ function valideishan() {
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
     var email = document.getElementById("email").value;
+    var origen = document.getElementById("origen").value;
     var mensaje = document.getElementById("mensaje").value;
-    if (nombre != '' && apellido != '' && email != '' && mensaje != '') {
+    if (nombre != '' && apellido != '' && email != '' && mensaje != '' && origen != '') {
         window.location = "formularioenviado.html";
     } else {
         mostrarObligatorios();

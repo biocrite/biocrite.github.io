@@ -20,7 +20,7 @@
     
         <main>    <h1>Contacto</h1>
             <figure>
-                <img src="/img/koala-form.png" width="200px"/>
+                <img src="/img/koala-form.png" width="200" alt="Koalascritura">
             </figure>
             <form class="form" name="formie" id="formie">
                 <div class="formitem">
@@ -38,25 +38,16 @@
                     <input type="email" name="email" id="email" placeholder="orejona@eucalyptofilxs.au" required>
                     <span class="obligatorymarker">Campo obligatorio.</span>
                 </div>
-                <div class="formitemm">
-                    <fieldset>
-                        <legend>¿Cómo nos conociste?</legend>
-                        <div>
-                            <input type="radio" id="internet" name="origen" value="internet" required checked />
-                            <label for="internet">Vi algo en internet.</label>
-                        </div>
-        
-                        <div>
-                            <input type="radio" id="boca-en-boca" name="origen" value="boca-en-boca" />
-                            <label for="boca-en-boca">Alguien me comentó algo.</label>
-                        </div>
-        
-                        <div>
-                            <input type="radio" id="no-recuerdo" name="origen" value="no-recuerdo" />
-                            <label for="no-recuerdo">No recuerdo.</label>
-                        </div>
-        
-                    </fieldset>
+                <div class="formitem">
+                        <label for="origen">¿Cómo nos conociste?</label>
+
+                        <select name="origen" id="origen">
+                            <option value="">--Elige una opción--</option>
+                            <option value="Vi algo en internet.">Vi algo en internet.</option>
+                            <option value="Alguien me contó.">Alguien me contó.</option>
+                            <option value="No recuerdo.">No recuerdo.</option>
+                          </select>
+
                 </div>
         
                 <div class="formitem">
@@ -66,16 +57,16 @@
                 </div>
         
                 <div class="formitem">
-                    <legend>¿Eres koala-amante?</legend>
+                    <p class="label-like">¿Eres koala-amante?</p>
                     <input type="checkbox" name="koala-amante" id="koala-amante" style="display:inline;">
                     <label for="koala-amante" style="display:inline; font-weight: unset;">¡Claro que sí!</label>
                 </div>
         
                 <div class="formbuttons">
                     <input type="image" id="enviador" class="btn-img" alt="Enviar" src="/img/enviar.png"
-                        onclick="valideishan()" />
-                    <input type="image" id="enviador" class="btn-img" alt="Borrar" src="/img/borrar.png"
-                        onclick="formreset();" />
+                        onclick="valideishan()" >
+                    <input type="image" id="borrador" class="btn-img" alt="Borrar" src="/img/borrar.png"
+                        onclick="formreset();" >
                 </div>
             </form>
         </main>
@@ -85,7 +76,7 @@
     
         </div>
     
-        <script src="/js/includer.js" /></script>
+        <script src="/js/includer.js" ></script>
 
 
     <script src="/js/contacto.js"></script>

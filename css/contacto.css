@@ -1,4 +1,6 @@
 @import url("pages.css");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 
 .formitem {
     margin: 20px 5px;
@@ -14,20 +16,26 @@
     margin: 10px auto;
 }
 
-.formitem input[type=text],
-.formitem input[type=email],
-.formitem textarea {
+input:not([type=checkbox]):not([type=image]),
+select,
+textarea {
     display: block;
     border-radius: 10px;
     padding: 10px;
-    font-size:18px;
+    font-size: 20px;
     min-width: 45%;
+    font-family: "Kalam";
+    font-weight: 300;
+    font-style: normal;
 }
-.formitem textarea {
+
+textarea {
     min-width: 70%;
 }
-.formitem label,
-legend {
+
+label,
+legend,
+.label-like {
     font-weight: bolder;
 }
 
