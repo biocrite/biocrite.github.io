@@ -142,7 +142,7 @@ main {
 @media screen and (width >=800px) {}
 
 /* >>>>>>> tablets & computadoras */
-@media screen and (600px < width) {
+@media screen and (800px < width) {
     .onlySmallScreens {
         display: none;
     }

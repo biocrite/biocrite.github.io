@@ -1,54 +1,76 @@
 @import url("wrapper.css");
 
 body {
-    background-color: white!important;
+    background-color: white !important;
     padding: 10px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     margin: 20px 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
 }
 
 h2 {
     color: rgb(119, 119, 119);
 }
 
+/* Estilos para imagenes */
 figure {
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
-
 figure img {
     border-radius: 30px;
     margin-bottom: 15px;
 }
-
 figure img:not(.dimmerImage) {
-    max-width:90%;
+    max-width: 90%;
     max-height: 40vh;
 }
-
 .dimmereable:hover {
     transform: scale(1.05);
     transition-duration: 800ms;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
-
 .dimmerImage {
     max-width: 90%;
 }
 
-h1,
-h2,
-figure {
+/* La cajita para mostrar contenido random */
+.boxy {
     text-align: center;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin: 10px;
 }
 
+.datoDisplayer {
+    min-height: 200px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Botones que son imagenes */
 .btn-img {
     border: 2px solid red;
     border-radius: 10px;
-    margin: 10px!important;
+    margin: 10px !important;
 }
 
 .btn-img:hover {

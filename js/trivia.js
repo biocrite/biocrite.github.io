@@ -14,13 +14,14 @@ const datos = [
     "El periodo de gestación de los koalas es de aproximadamente un mes, después del cual nace una cría que es del tamaño de una judía y continúa desarrollándose en la bolsa marsupial de la madre.",
     "Los koalas recién nacidos, llamados \"joey\", permanecen en la bolsa de su madre durante alrededor de seis meses antes de comenzar a aventurarse fuera.",
     "La principal amenaza para la población de koalas es la pérdida de hábitat debido a la deforestación, así como enfermedades como la clamidia y los ataques de perros domésticos."
-]
+];
 
 const datoDisplayer = document.getElementById("datoDisplayer");
 const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 function randomDato() {
-    var rando = randomIntegerInRange(0, 14);
+    var maxDatos = datos.length-1;
+    var rando = randomIntegerInRange(0, maxDatos);
     datoDisplayer.innerHTML = datos[rando];
 }
 
