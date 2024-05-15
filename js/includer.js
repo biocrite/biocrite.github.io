@@ -54,14 +54,14 @@ function includeHTML() {
 //----------------------//
 
 function menuExpander() {
-  let navBarExpander = document.getElementById("navBarExpander");
+  //let navBarExpander = document.getElementById("navBarExpander");
   let navmenu = document.getElementById("navmenu");
     if (navmenu.style.display == 'none') {
     navmenu.style.display = 'flex';
-    navBarExpander.innerHTML = "[x]";
+    //navBarExpander.innerHTML = "[x]";
   } else {
    navmenu.style.display = 'none';
-   navBarExpander.innerHTML = "Menú";
+   //navBarExpander.innerHTML = "Menú";
    }
 }
 

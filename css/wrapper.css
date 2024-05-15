@@ -33,6 +33,11 @@
 
 
 /* Mobile First */
+#navBarExpander {
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+}
 .onlyBigScreens {
     visibility: hidden;
 }
