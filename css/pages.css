@@ -20,11 +20,16 @@ h2 {
     color: rgb(119, 119, 119);
 }
 
+li {
+    padding-bottom: 20px;
+}
+
 /* Estilos para imagenes */
 figure {
     display: block;
     margin: 0 auto;
     text-align: center;
+    color: darkslategray;
 }
 
 figure img {
