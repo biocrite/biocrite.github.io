@@ -15,27 +15,31 @@
 
 </head>
 
-<center>
+<div class="onlySmallScreens" style="cursor: pointer; text-align: right;" id="navBarExpander" onclick="menuExpander()">Menú</div>
+
 <h1 style="display:none">KoalaMundia</h1>
-<div><a href="/"><img src="/img/header.png" width="100%" style="text-align:center;"></a></div>
+<div><a href="/"><img src="/img/header.png" width="100%" /></a></div>
+
 <nav>
-    <ul class="navmenu">
-        <li><a href="/" onclick="textolateral('Inicio');">Inicio</a></li>
-        <li>|</li>
-        <li><a href="/pages/galeria.html" onclick="textolateral('Galería');">Galería</a>
+    <ul class="navmenu" id="navmenu">
+        <h2 class="onlySmallScreens">Menú</h2>
+        <li><a href="/">Inicio</a></li>
+        <li class="onlyBigScreens">|</li>
+        <li><a href="/pages/galeria.html">Galería</a>
         </li>
-        <li>|</li>
-        <li><a href="/pages/aprende-sobre-los-koalas.html" onclick="textolateral('Aprende');">Aprende</a>
+        <li class="onlyBigScreens">|</li>
+        <li><a href="/pages/aprende-sobre-los-koalas.html">Aprende</a>
         </li>
-        <li>|</li>
-        <li><a href="/pages/quienessomos.html" target="ventanita"
-                onclick="textolateral('Quiénes Somos');">Quiénes Somos</a></li>
-        <li>|</li>
-        <li><a href="/pages/contacto.html" onclick="textolateral('Contacto');">Contacto</a>
+        <li class="onlyBigScreens">|</li>
+        <li><a href="/pages/quienessomos.html">Quiénes Somos</a></li>
+        <li class="onlyBigScreens">|</li>
+        <li><a href="/pages/contacto.html">Contacto</a>
+        <li><br/><a class="onlySmallScreens" href="#" onclick="menuExpander()">[Volver]</a>
         </li>
+
     </ul>
 </nav>
-</center>
+
 </body>
 
 </html>

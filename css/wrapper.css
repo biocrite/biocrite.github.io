@@ -13,38 +13,55 @@
     font-family: "Roboto Slab", serif;
     font-weight: 350;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
+    letter-spacing: 1px;
     text-align: justify;
 }
 
 /*-----------------*/
-/* HEADER * FOOTER */
+/* HEADER & FOOTER */
 /*-----------------*/
 
 .header {
     text-align: center;
 }
 
+
+/* Mobile First */
+.onlyBigScreens {
+    visibility: hidden;
+}
+
 .navmenu {
-    list-style: none;
-    display: flex;
-    max-width: 650px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     margin: auto;
-    justify-content: space-between;
-    padding: 5px 10px;
+    display: none;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition-duration: 400ms;
+    font-size: large;
+    list-style: none;
 }
 
 .navmenu a,
 footer a {
     text-decoration: none;
     color: black;
+    padding: 0px 10px;
 }
 
 .navmenu a:hover,
 footer a:hover {
-    color: darkred;
-    border-bottom: 1px solid darkgray;
+    color: red;
+    border-bottom: 1px solid red;
     transition-duration: 300ms;
 }
 
@@ -87,12 +104,13 @@ main {
     margin: auto;
     color: white;
     visibility: hidden;
-    cursor:pointer;
+    cursor: pointer;
     transition-duration: 200ms;
 }
 
 #dimmer figure img {
-    width: 100vw;
+    max-width: 90vw;
+    max-height: 90vh;
     padding: 10px;
 }
 
@@ -114,15 +132,38 @@ main {
 }
 
 /* tablets */
-@media screen and (480px < width < 800px) {
-    body {
-        background-color: aqua;
-    }
-}
+@media screen and (480px < width < 800px) {}
 
 /* computadoras */
-@media screen and (width >=800px) {
-    body {
-        background-color: white;
+@media screen and (width >=800px) {}
+
+/* tablets & computadoras */
+@media screen and (600px < width) {
+    .onlySmallScreens {
+        display: none;
     }
+
+    .onlyBigScreens {
+        visibility: visible;
+    }
+
+    .navmenu {
+        /* Resetear valores de navbar mobile-first */
+        height: unset;
+        width: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+        background-color: unset;
+        align-items: unset;
+        text-align: unset;
+        font-size: unset;
+        display: flex!important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 650px;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
+
 }
