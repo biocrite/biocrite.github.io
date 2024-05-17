@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendé sobre los koalas</title>
+
+    <link rel="stylesheet" href="../css/pages.css">
+
+    <style>
+        .boxy {
+            text-align: center;
+            background-color: lightgoldenrodyellow;
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 1.5rem;
+            line-height: 150%;
+            margin: 10px
+        }
+
+        .boxy p {
+            min-height: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper" id="wrapper">
+
+        <header data-src="/wrapper/header.html"></header>
+
+
+        <main>
+            <h1>¿Sabías que… ?</h1>
+
+            <div class="boxy">
+                <div>
+                    <p id="datoDisplayer"></p>
+                </div>
+
+                <input type="image" class="btn-img" alt="Otro Dato" src="../img/mas.png" onclick="randomDato()" />
+            </div>
+        </main>
+
+
+        <footer data-src="/wrapper/footer.html"></footer>
+
+    </div>
+
+    <script src="/js/includer.js" /></script>
+    <script src="/js/randomdato.js"></script>
+
+
+</body>
+
+</html>

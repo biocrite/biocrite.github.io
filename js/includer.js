@@ -1,18 +1,3 @@
-//-------------------------------//
-//-------FAV ICON & STYLES-------//
-//-------------------------------//
-
-function setHeadItems(elementType, relType, source){
-  let headTitle = document.querySelector('head');
-  let elementito = document.createElement(elementType);
-  elementito.setAttribute('rel',relType);
-  elementito.setAttribute('href',source);
-  headTitle.appendChild(elementito);
-}
-setHeadItems('link', 'shortcut icon', 'https://img.icons8.com/emoji/48/koala-emoji.png');
-//setHeadItems('link', 'stylesheet', '/css/pages.css');
-
-
 //----------------------//
 //---INCLUDE FUNCTION---//
 //------FOR WRAPPER-----//
@@ -49,23 +34,6 @@ function includeHTML() {
 
   includeHTML();
 
-//----------------------//
-//--------MENU 🍔-------//
-//----------------------//
-
-function menuExpander() {
-  //let navBarExpander = document.getElementById("navBarExpander");
-  let navmenu = document.getElementById("navmenu");
-    if (navmenu.style.display == 'none') {
-    navmenu.style.display = 'flex';
-    //navBarExpander.innerHTML = "[x]";
-  } else {
-   navmenu.style.display = 'none';
-   //navBarExpander.innerHTML = "Menú";
-   }
-}
-
-
 
 //----------------------//
 //--------DIMMER--------//
@@ -77,8 +45,8 @@ dimmerBG.id = 'dimmer';
 document.getElementById("wrapper").appendChild(dimmerBG);
 
 //función para mostrar dimmer con photo
-function lightbox() {
-    dimmerBG.innerHTML = `<figure><img class="dimmerImage" src="${this.src}" z-index="300" ></figure><p> [X] </p>`;
+function lightbox(pikcha) {
+    dimmerBG.innerHTML = `<figure><img class="dimmerImage" src="${pikcha.src}" z-index="300" /></figure><p> [X] </p>`;
     dimmerBG.style.visibility = "visible";
 }
 
@@ -92,13 +60,5 @@ dimmerBG.addEventListener("mouseup", lightboxOff);
 window.addEventListener('keydown', function(e){
     if((e.key=='Escape'||e.key=='Esc') && (e.target.nodeName=='BODY')){
         lightboxOff();
-        menuExpander();
     }
 }, true);
-
-//funcion para crear imagenes dimmereables al cliquear
-const dimmerGallery = document.getElementsByClassName("dimmereable");
-
-[].forEach.call(dimmerGallery, function (galleryPic) {
-  galleryPic.addEventListener("click", lightbox);
-});
