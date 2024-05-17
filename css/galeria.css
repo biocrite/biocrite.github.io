@@ -1,0 +1,88 @@
+@import url("pages.css");
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑    Estilos básicos para la galería (mobile-first)    ⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+.galeriaWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeriaItem {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: cyan;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.galeriaItem:nth-of-type(even) {
+    background-color: purple;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+}
+
+.galeriaItem:hover {
+    background-color:plum;
+    color: white;
+    border-color: gold;
+}
+
+.galeriaItem img, .galeriaItem figcaption {
+    flex: .5;
+    align-content: center;
+    margin: 10px;
+}
+
+.galeriaItem img {
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑    Media Query para Tablets y Compus      ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+/* celulares */
+@media screen and (width <=480px) {}
+
+/* tablets */
+@media screen and (480px < width <= 800px) {
+    .galeriaItem {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .galeriaItem * {
+        flex: 1;
+        width: 50%;
+    }
+
+    .galeriaItem:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+/* computadoras */
+@media screen and (800px < width) {
+    .galeriaWrapper {
+        display: flex;
+    }
+
+    .galeriaItem {
+        width: 32%; /* Fracción de cuántas imágenes por fila */ 
+    }
+
+}

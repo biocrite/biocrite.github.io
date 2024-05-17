@@ -1,79 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑   Estilos básicos universales (mobile-first) ⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
 * {
     box-sizing: border-box;
 }
 
-.wrapper {
+body {
+    background-color: white;
+    padding: 2%;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body, .wrapper {
     display: flex;
     flex-direction: column;
     max-width: 800px;
     min-height: 100vh;
     margin: auto;
     font-family: "Roboto Slab", serif;
-    font-weight: 350;
+    font-weight: 380;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    text-align: justify;
+    letter-spacing: .07cap;
+    text-align: left;
 }
 
-/*-----------------*/
-/* HEADER * FOOTER */
-/*-----------------*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Header (navbar) & Footer    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 
+/* Header */
 .header {
     text-align: center;
 }
-
-.navmenu {
-    list-style: none;
-    display: flex;
-    max-width: 650px;
-    margin: auto;
-    justify-content: space-between;
-    padding: 5px 10px;
+.headerImage {
+    width: 100%;
 }
 
+
+/* Navbar */
+.navmenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    display: none;
+    background-color: rgb(248, 166, 180);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition-duration: 400ms;
+    font-size: larger;
+    list-style: none;
+    z-index: 50;
+}
+.navmenu li {
+    padding: 10px;
+    cursor: pointer;
+}
+.subnavmenu {
+    list-style: none;
+    padding: 10px 0 0 0;
+    font-size: medium;
+}
+.subnavmenu li a {
+    color: darkslategray;
+}
+.onlyBigScreens {
+    display: none;
+}
+#navBarExpander {
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
+}
 .navmenu a,
 footer a {
     text-decoration: none;
     color: black;
+    padding: 0px 5px;
 }
-
 .navmenu a:hover,
 footer a:hover {
-    color: darkred;
-    border-bottom: 1px solid darkgray;
+    color: darkgoldenrod;
     transition-duration: 300ms;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 50px 0 30px 0;
     font-size: smaller;
 }
 
-/*-------------*/
-/*    MAIN     */
-/*-------------*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Main    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 
 main {
-    flex: 1;
+    display: flex;
     flex-direction: column;
+    flex: 1;
     width: 100%;
     margin: 20px auto 0 auto;
     padding: 20px 10px;
+    background-color: rgba(0, 255, 255, 0.459);
     border: 2px solid gold;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-/*-------------*/
-/*    DIMMER   */
-/*-------------*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Dimmer    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 
 #dimmer {
-    background-color: rgba(0, 0, 0, 95%);
+    background-color: rgba(0, 0, 0, 100%);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -87,42 +148,96 @@ main {
     margin: auto;
     color: white;
     visibility: hidden;
-    cursor:pointer;
     transition-duration: 200ms;
 }
-
+#dimmer figure {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+    justify-content: center;
+    font-size: clamp(14px, 20px, 25px);
+    margin: 20px;
+}
 #dimmer figure img {
-    width: 100vw;
-    padding: 10px;
+    max-height: 80%;
+    max-width: 90%;
+    width: 90%;
+    padding: 1%;
+    border-radius: 25px;
+    object-fit:contain;
+}
+#dimmer figure figcaption {
+    color: white;
+    padding: 2%;
 }
 
-/*-------------*/
-/* MEDIA QUERY */
-/*-------------*/
+.dimmerBGkiller {
+    cursor: pointer;
+    text-align: right;
+    width: 90%;
+}
 
-/* celulares */
-@media screen and (width <=480px) {
-    body {
-        background-color: greenyellow;
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑    Media Query para tablets y Compus    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+/* Celulares */
+@media screen and (width <=480px) {}
+
+/* Tablets */
+@media screen and (480px < width <= 800px) {}
+
+/* Computadoras */
+@media screen and (800px < width) {
+    .onlySmallScreens {
+        display: none;
+    }
+
+    .navmenu .onlyBigScreens {
+        display: flex;
     }
 
     .navmenu {
-        width: 100%;
-        margin: 0;
+        /* Resetear valores de navbar mobile-first */
+        height: unset;
+        width: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+        background-color: unset;
+        align-items: unset;
+        text-align: unset;
+        font-size: unset;
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        justify-content: space-evenly;
+        padding: unset;
+    }
+    .navmenu li {
+        padding: 5px;
     }
 
-}
-
-/* tablets */
-@media screen and (480px < width < 800px) {
-    body {
-        background-color: aqua;
-    }
-}
-
-/* computadoras */
-@media screen and (width >=800px) {
-    body {
+    .subnavmenu {
+        position: absolute;
+        margin-left: -40px;
         background-color: white;
+        border: 1px solid black;
+        border-top: 0;
+        text-align: center;
+        display: none;
+        border-radius: 4px;
     }
+
+    .navmenu li:hover .subnavmenu {
+        display: inherit;
+    }
+
+    .menuheader::after {
+        content: " ▾";
+    }
+
 }

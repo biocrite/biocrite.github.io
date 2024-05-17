@@ -1,53 +1,95 @@
 @import url("wrapper.css");
 
-body {
-    background-color: white!important;
-    padding: 10px;
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Encabezados y texto      ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+
+h1,
+h2,
+p,
+main li {
+    margin: 20px;
 }
 
-h1, h2, p {
-    margin: 20px 20px;
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(89, 17, 128);
 }
 
 h2 {
-    color: darkgray;
+    color: rgb(114, 62, 62);
 }
 
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Estilos para imagenes      ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
 figure {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
+    text-align: center;
+    color: darkslategray;
 }
 
 figure img {
     border-radius: 30px;
+    margin-bottom: 15px;
 }
 
 figure img:not(.dimmerImage) {
-    max-width:90%;
+    max-width: 90%;
     max-height: 40vh;
 }
 
-figure img:not(.dimmerImage):hover {
+/* imágenes dimmereables */
+
+.dimmereable img, .dimmerImage {
+    animation: fadeInAnimationSlower ease 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimationSlower {
+    0% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 50;
+    }
+
+    90% {
+        opacity: 80;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dimmereable img:hover {
+    border-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     transform: scale(1.05);
     transition-duration: 800ms;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
+
 }
 
-.dimmerImage {
-    max-width: 90%;
-}
-
-h1,
-h2,
-figure {
-    text-align: center;
-}
+/* Botones que son imagenes */
 
 .btn-img {
     border: 2px solid red;
     border-radius: 10px;
-    margin: 10px!important;
+    margin: 10px;
 }
 
 .btn-img:hover {
@@ -55,4 +97,43 @@ figure {
     transform: scale(1.1);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition-duration: 400ms;
+}
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Caja de randomidades      ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+.boxy {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10%;
+    font-size: clamp(10px, 22px, 25px);;
+    line-height: 150%;
+    margin: auto;
+    width: 100%;
+}
+
+.datoDisplayer {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.datoDisplayer .koala-nombre {
+    font-size: clamp(14px, 7vw, 50pt);
+}
+
+.datoDisplayer .koala-apellido {
+    font-size: clamp(40px, 14vw, 90pt);
+    font-weight: 500;
+    line-height: 100%;
+    text-shadow: -1px -1px 0 white,
+        1px -1px 0 darkblue,
+        -1px 1px 0 black,
+        1px 1px 0 darkred;
 }
