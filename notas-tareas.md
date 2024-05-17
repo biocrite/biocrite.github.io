@@ -12,7 +12,7 @@
 - [x]    Incorporar más fotos y descripciones en la galería
    
 - [ ]    Limpiar HTML (añadir `<section>` y `<article>`) y CSS
-          - [ ] tratar de usar siempre % / vh / vw y no "px" o "pt"
+ - [ ] tratar de usar siempre % / vh / vw y no "px" o "pt"
 
 - [ ]    Optimizar imágenes
           - [x] agregar alt a cada imágen
