@@ -129,7 +129,7 @@ figure img:not(.dimmerImage) {
 }
 
 .datoDisplayer .koala-apellido {
-    font-size: clamp(40px, 14vw, 90pt);
+    font-size: clamp(40px, 12vw, 85pt);
     font-weight: 500;
     line-height: 100%;
     text-shadow: -1px -1px 0 white,
