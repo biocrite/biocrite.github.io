@@ -6,14 +6,17 @@
 :root {
     --body-bgcolor: white;
     --body-color: black;
-    --texto-color2: darkslategray;
-    --texto-color3: rgb(99, 98, 98);
+    --texto-color2: darkslategray; /* submenu, h1 & footer */
+    --texto-color3: rgb(99, 98, 98); /* h2 */
+
+    font-size: 18px;
+    --box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.2);
+    --border-radius: 1rem;
 
     --navmenu-mobile-bgcolor: rgb(248, 166, 180);
-    --submenu-desktop-bgcolor: darkslategray;
     
     --main-bgcolor: rgb(178, 255, 255);
-    --main-border-color: goldenrod;
+    --main-border: .15rem solid goldenrod;
     
     --galeria-item-bgcolor1: cyan;
     --galeria-item-bgcolor2: purple;
@@ -21,11 +24,8 @@
     --galeria-item-hover-color: white;
 
     --boxy-bgcolor: lightgoldenrodyellow;
-    --boxy-border: .2rem solid darkred;
+    --boxy-border: .15rem solid darkred;
 
-    --border-radius: 1rem;
-
-    font-size: 18px;
 }
 
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
@@ -78,21 +78,21 @@ body, .wrapper {
     top: 0;
     left: 0;
     margin: auto;
-    padding-bottom: 30px;
+    padding: 5% 2%;
     display: none;
     background-color: var(--navmenu-mobile-bgcolor);
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
     font-size: larger;
     list-style: none;
     z-index: 5;
+    overflow: scroll;
 }
 .navmenu li {
     padding: 1rem;
-    cursor: pointer;
 }
 .subnavmenu {
     list-style: none;
@@ -100,7 +100,7 @@ body, .wrapper {
     font-size: medium;
 }
 .subnavmenu li a {
-    color: var(--subnavmenu-desktop-bgcolor);
+    color: var(--texto-color2);
 }
 .onlyBigScreens {
     display: none;
@@ -108,8 +108,11 @@ body, .wrapper {
 #navBarExpander {
     font-size: 2rem;
     text-align: right;
-    cursor: pointer;
     margin-right: .5rem;
+    z-index: 5;
+}
+.navmenu li a, .clickable {
+    cursor: pointer;
 }
 .navmenu a{
     text-decoration: none;
@@ -130,6 +133,7 @@ footer {
 footer a {
     text-decoration: none;
     color: var(--body-color);
+    font-weight:400;
 }
 
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
@@ -143,10 +147,9 @@ main {
     margin: 1rem auto;
     padding: 1rem .5rem;
     background-color: var(--main-bgcolor);
-    border: 2px solid;
-    border-color: var(--main-border-color);
+    border: var(--main-border);
     border-radius: var(--border-radius);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -166,14 +169,13 @@ main {
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 
 #dimmer {
-    background-color: rgba(0, 0, 0, 100%);
+    background-color: black;
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 20;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -240,13 +242,15 @@ main {
         align-items: unset;
         text-align: unset;
         font-size: unset;
-        display: flex !important;
+        padding: unset;
+        overflow: unset;
+        display: flex!important;
         flex-direction: row;
         flex-wrap: nowrap;
         max-width: 100%;
         justify-content: space-evenly;
-        padding: unset;
         letter-spacing: 1px;
+
     }
     .navmenu li {
         padding: 0;

@@ -16,12 +16,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     background-color: var(--galeria-item-bgcolor1);
     border-radius: var(--border-radius);
     margin: 1% 0;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: var(--main-border);
+    border-color: transparent;
 }
 
 .galeriaItem:nth-of-type(even) {
@@ -32,7 +33,7 @@
 .galeriaItem:hover {
     background-color: var(--galeria-item-hover-bgcolor);
     color: var(--galeria-item-hover-color);
-    border-color: var(--main-border-color);
+    border-color: gold;
 }
 
 .galeriaItem img, .galeriaItem figcaption {

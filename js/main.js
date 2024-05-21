@@ -42,11 +42,11 @@ wrapperBuilder([
 //----------------------//
 
 function menuExpander() {
-  let navmenu = document.getElementById("navmenu");
-  if (navmenu.style.display == 'none') {
-    navmenu.style.display = 'flex';
-  } else {
+  navmenu = document.getElementById("navmenu");
+  if (navmenu.style.display == 'flex') {
     navmenu.style.display = 'none';
+  } else {
+    navmenu.style.display = 'flex';
   }
 }
 

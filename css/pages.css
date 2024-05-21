@@ -85,7 +85,7 @@ figure img:not(.dimmerImage) {
 
 .dimmereable img:hover {
     border-color: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: var(--box-shadow);
     transform: scale(1.05);
     transition-duration: 800ms;
     cursor: pointer;
@@ -103,7 +103,7 @@ figure img:not(.dimmerImage) {
 .btn-img:hover {
     border-color: orange;
     transform: scale(1.1);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     transition-duration: 400ms;
 }
 
@@ -119,11 +119,11 @@ figure img:not(.dimmerImage) {
     background-color: var(--boxy-bgcolor);
     border: var(--boxy-border);
     border-radius: var(--border-radius);
-    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-size: clamp(.8rem, 3vw, 1.5rem);
 }
 
 .datoDisplayer {
-    min-height: 12rem;
+    min-height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
