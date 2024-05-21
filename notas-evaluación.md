@@ -7,25 +7,25 @@
 
 # Criteria de Evaluación
 
-- [x] El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page.
- - el sitio incluye las siguientes páginas: 
-            - 🏠 Inicio
-            - 📸 Galería
-            - 🐨 Diversión
-                - ✨ Koala Curiosidades ✨
-                - ✨ Koala Nombre ✨
-                - ✨ Koala TV ✨
-            - 🫂 Quiénes Somos
-            - 💬 Contacto
-                - Confirmación de Formulario Enviado
-            - Política de Privacidad
-            - Términos de Uso
-        - el header y el footer también están almacenados en documentos de HTML separados en /wrapper para poder usarlos canónicamente
+* [x] El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page.
+  - El sitio incluye las siguientes páginas:
+	  - 🏠 Inicio
+	  - 📸 Galería
+	  - 🐨 Diversión
+      - ✨ Koala Curiosidades ✨
+      - ✨ Koala Nombre ✨
+      - ✨ Koala TV ✨
+    - 🫂 Quiénes Somos
+    - 💬 Contacto
+      - Confirmación de Formulario Enviado
+    - Política de Privacidad
+    - Términos de Uso
+  - El header y el footer están almacenados en `/wrapper`
 
- [ ] (__/15) El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.
-        - el formulario de contacto (/pages/contacto.html) incluye 6 campos y 2 botones de imagen:
-            - nombre [texto], 
-            - apellido [texto], 
+* [x] El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.
+  - El formulario de contacto (/pages/contacto.html) incluye 6 campos y 2 botones de imagen:
+	  - nombre [texto], 
+	  - apellido [texto], 
             - mail [mail], 
             - origen [select], 
             - mensaje [textarea], 
