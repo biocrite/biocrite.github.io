@@ -17,53 +17,25 @@ setHeadItems('link', 'shortcut icon', '/favicon.ico');
 //------FOR WRAPPER-----//
 //----------------------//
 
-// // incluir las diferentes partes del wrapper
-// function includeHTML() {
-//   var z, i, elmnt, file, xhttp;
-//   /* Loop through a collection of all HTML elements: */
-//   z = document.getElementsByTagName("*");
-//   for (i = 0; i < z.length; i++) {
-//     elmnt = z[i];
-//     /*search for elements with a certain atrribute:*/
-//     file = elmnt.getAttribute("data-src");
-//     if (file) {
-//       /* Make an HTTP request using the attribute value as the file name: */
-//       xhttp = new XMLHttpRequest();
-//       xhttp.onreadystatechange = function () {
-//         if (this.readyState == 4) {
-//           if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-//           if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-//           /* Remove the attribute, and call this function once more: */
-//           elmnt.removeAttribute("data-src");
-//           includeHTML();
-//         }
-//       }
-//       xhttp.open("GET", file, true);
-//       xhttp.send();
-//       /* Exit the function: */
-//       return;
-//     }
-//   }
-// }
-// // includeHTML();
-
-wrapperSecciones = [
-  { section: "header", URL: "/wrapper/header.html" },
-  { section: "footer", URL: "/wrapper/footer.html" }];
-
-wrapperSecciones.forEach(z => {
-  let section = document.getElementsByTagName(z["section"])[0];
-  let url = z["URL"];
-  xhttp = new XMLHttpRequest();
-  xhttp.open("GET", url, true);
-  xhttp.send();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4) {
-      if (this.status == 200) { section.innerHTML = this.response; }
-      if (this.status == 404) { section.innerHTML = "Algo está faltando aquí."; }
+function wrapperBuilder(wrapperSections) {
+  wrapperSections.forEach(section => {
+    let wrapperTag = document.getElementsByTagName(section["wrapperTag"])[0];
+    let url = section["URL"];
+    xhttp = new XMLHttpRequest();
+    xhttp.open("GET", url, true);
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        if (this.status == 200) { wrapperTag.innerHTML = this.response; }
+        if (this.status == 404) { wrapperTag.innerHTML = "Algo está faltando aquí."; }
+      }
     }
-  }
-});
+  });
+}
+
+wrapperBuilder([
+  { wrapperTag: "header", URL: "/wrapper/header.html" },
+  { wrapperTag: "footer", URL: "/wrapper/footer.html" }]);
 
 //----------------------//
 //--------MENU 🍔-------//
