@@ -1,7 +1,5 @@
-# biocrite.github.io
-Codo a Codo - Proyecto Final
+# Codo a Codo - Proyecto Final
 
-# Info
 **Nombre del sitio:** Koala Mundia
 
 **Fecha de entrega:** 26 de mayo
