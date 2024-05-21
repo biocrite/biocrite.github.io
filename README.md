@@ -59,7 +59,7 @@
  * [x] Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon.
   - La página es legible y presentable
   - La navegación está funcionando bien con menú hamburguesa para diapositivos con pantallas más pequeñas
-  - Hay un favicon reproducido en cada página mediante /js/main.js
+  - Hay un favicon enlazado en cada página mediante /js/main.js
 
  * [x] El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio)
   - Repositorio: https://github.com/biocrite/biocrite.github.io

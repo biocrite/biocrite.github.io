@@ -18,11 +18,14 @@ h2 {
 }
 
 h1 {
-    color: rgb(89, 17, 128);
+    color: var(--texto-color2);
+}
+h1:before, h1:after {
+    content: "  🌺  "
 }
 
 h2 {
-    color: rgb(114, 62, 62);
+    color: var(--texto-color3);
 }
 
 .centrado {
@@ -39,7 +42,7 @@ figure {
     align-items: center;
     margin: 0 auto;
     text-align: center;
-    color: darkslategray;
+    color: var(--texto-color2);
 }
 
 figure img {
@@ -49,7 +52,7 @@ figure img {
 
 figure img:not(.dimmerImage) {
     max-width: 90%;
-    max-height: 40vh;
+    max-height: 50vh;
 }
 
 /* imágenes dimmereables */
@@ -96,7 +99,7 @@ figure img:not(.dimmerImage) {
 }
 
 .btn-img:hover {
-    border-color: green;
+    border-color: orange;
     transform: scale(1.1);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition-duration: 400ms;

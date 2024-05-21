@@ -71,12 +71,12 @@ function lightbox(galleryPic) {
                             <figcaption>${leyendaElegida}
                             </figcaption>
                           </figure>`;
-  dimmerBG.style.visibility = "visible";
+  dimmerBG.style.display = "flex";
 }
 
 //funciones para salir del dimmer
 function lightboxOff() {
-  dimmerBG.style.visibility = "hidden";
+  dimmerBG.style.display = "none";
 }
 
 dimmerBG.addEventListener("mouseup", lightboxOff);

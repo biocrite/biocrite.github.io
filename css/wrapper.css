@@ -6,6 +6,8 @@
 :root {
     --body-bgcolor: white;
     --body-color: black;
+    --texto-color2: darkslategray;
+    --texto-color3: rgb(99, 98, 98);
 
     --navmenu-mobile-bgcolor: rgb(248, 166, 180);
     --submenu-desktop-bgcolor: darkslategray;
@@ -109,10 +111,9 @@ body, .wrapper {
     cursor: pointer;
     margin-right: .5rem;
 }
-.navmenu a,
-footer a {
+.navmenu a{
     text-decoration: none;
-    color: black;
+    color: var(--body-color);
 }
 .navmenu a:hover,
 footer a:hover {
@@ -124,6 +125,11 @@ footer a:hover {
 footer {
     text-align: center;
     font-size: smaller;
+    color: var(--texto-color2);
+}
+footer a {
+    text-decoration: none;
+    color: var(--body-color);
 }
 
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
@@ -173,7 +179,7 @@ main {
     flex-direction: column;
     margin: auto;
     color: white;
-    visibility: hidden;
+    display:none;
 }
 #dimmer figure {
     display: flex;
@@ -240,6 +246,7 @@ main {
         max-width: 100%;
         justify-content: space-evenly;
         padding: unset;
+        letter-spacing: 1px;
     }
     .navmenu li {
         padding: 0;
@@ -247,13 +254,13 @@ main {
 
     .subnavmenu {
         position: absolute;
-        margin-left: -2.5rem;
+        margin-left: -3rem;
         background-color: var(--body-bgcolor);
         border: 1px solid black;
         border-top: 0;
         text-align: center;
         display: none;
-        border-radius: 4px;
+        border-radius: 0 0 4px 4px;
         z-index: 5;
         padding: .5rem;
     }
