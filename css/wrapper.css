@@ -1,6 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑   "Skin"    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+:root {
+    --body-bgcolor: white;
+    --body-color: black;
+
+    --navmenu-mobile-bgcolor: rgb(248, 166, 180);
+    --submenu-desktop-bgcolor: darkslategray;
+    
+    --main-bgcolor: rgb(178, 255, 255);
+    --main-border-color: goldenrod;
+    
+    --galeria-item-bgcolor1: cyan;
+    --galeria-item-bgcolor2: purple;
+    --galeria-item-hover-bgcolor: plum;
+    --galeria-item-hover-color: white;
+
+    --boxy-bgcolor: lightgoldenrodyellow;
+    --boxy-border: .2rem solid darkred;
+
+    --border-radius: 1rem;
+
+    font-size: 18px;
+}
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 /*⁑⁑⁑⁑⁑   Estilos básicos universales (mobile-first) ⁑⁑⁑⁑⁑⁑⁑⁑*/
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 
@@ -9,20 +35,9 @@
 }
 
 body {
-    background-color: white;
-    padding: 2%;
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    background-color: var(--body-bgcolor);
+    color: var(--body-color);
+    padding: 1%;
 }
 
 body, .wrapper {
@@ -34,9 +49,9 @@ body, .wrapper {
     font-family: "Roboto Slab", serif;
     font-weight: 380;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 1.5;
-    letter-spacing: .07cap;
+    letter-spacing: .05rem;
     text-align: left;
 }
 
@@ -63,7 +78,7 @@ body, .wrapper {
     margin: auto;
     padding-bottom: 30px;
     display: none;
-    background-color: rgb(248, 166, 180);
+    background-color: var(--navmenu-mobile-bgcolor);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -71,33 +86,33 @@ body, .wrapper {
     transition-duration: 400ms;
     font-size: larger;
     list-style: none;
-    z-index: 50;
+    z-index: 5;
 }
 .navmenu li {
-    padding: 10px;
+    padding: 1rem;
     cursor: pointer;
 }
 .subnavmenu {
     list-style: none;
-    padding: 10px 0 0 0;
+    padding: 0;
     font-size: medium;
 }
 .subnavmenu li a {
-    color: darkslategray;
+    color: var(--subnavmenu-desktop-bgcolor);
 }
 .onlyBigScreens {
     display: none;
 }
 #navBarExpander {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: right;
     cursor: pointer;
+    margin-right: .5rem;
 }
 .navmenu a,
 footer a {
     text-decoration: none;
     color: black;
-    padding: 0px 5px;
 }
 .navmenu a:hover,
 footer a:hover {
@@ -108,7 +123,6 @@ footer a:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 50px 0 30px 0;
     font-size: smaller;
 }
 
@@ -119,14 +133,26 @@ footer {
 main {
     display: flex;
     flex-direction: column;
-    flex: 1;
     width: 100%;
-    margin: 20px auto 0 auto;
-    padding: 20px 10px;
-    background-color: rgba(0, 255, 255, 0.459);
-    border: 2px solid gold;
-    border-radius: 15px;
+    margin: 1rem auto;
+    padding: 1rem .5rem;
+    background-color: var(--main-bgcolor);
+    border: 2px solid;
+    border-color: var(--main-border-color);
+    border-radius: var(--border-radius);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
@@ -148,7 +174,6 @@ main {
     margin: auto;
     color: white;
     visibility: hidden;
-    transition-duration: 200ms;
 }
 #dimmer figure {
     display: flex;
@@ -157,15 +182,14 @@ main {
     margin: auto;
     padding: 2%;
     justify-content: center;
-    font-size: clamp(14px, 20px, 25px);
-    margin: 20px;
+    font-size: clamp(.8rem, 3.5vw, 2rem);
+    margin: 1rem;
 }
 #dimmer figure img {
-    max-height: 80%;
-    max-width: 90%;
     width: 90%;
+    max-height: 80%;
     padding: 1%;
-    border-radius: 25px;
+    border-radius: var(--border-radius);
     object-fit:contain;
 }
 #dimmer figure figcaption {
@@ -218,18 +242,24 @@ main {
         padding: unset;
     }
     .navmenu li {
-        padding: 5px;
+        padding: 0;
     }
 
     .subnavmenu {
         position: absolute;
-        margin-left: -40px;
-        background-color: white;
+        margin-left: -2.5rem;
+        background-color: var(--body-bgcolor);
         border: 1px solid black;
         border-top: 0;
         text-align: center;
         display: none;
         border-radius: 4px;
+        z-index: 5;
+        padding: .5rem;
+    }
+
+    .subnavmenu li {
+        padding: .5rem;
     }
 
     .navmenu li:hover .subnavmenu {

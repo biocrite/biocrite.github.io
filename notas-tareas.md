@@ -11,14 +11,12 @@
 
 - [x]    Incorporar más fotos y descripciones en la galería
    
-- [ ] Limpiar HTML (añadir `<section>` y `<article>`) y CSS
-   - [ ]   tratar de usar siempre % / vh / vw y no "px" o "pt"
+- [x] Limpiar HTML (añadir `<section>` y `<article>`) y CSS
+   - [x]   tratar de usar siempre % / vh / vw y no "px" o "pt"
 
-- [ ]    Optimizar imágenes
+- [x]    Optimizar imágenes
           - [x] agregar alt a cada imágen
-          - [ ] optimizar header (archivo más pequeño?)
-          - [ ] optimizar enviar / borrar / más (archivos más grandes)
+          - [x] optimizar header (archivo más pequeño?)
+          - [x] optimizar enviar / borrar / más (archivos más grandes)
 
 - [x]    Optimizar favicon local
-          - no sé por qué .ico no está funcionando,
-               pero tenemos un png por las dudas 🤷🏽‍♀️
