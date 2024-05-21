@@ -8,7 +8,7 @@
 # Criteria de Evaluación
 
  - [x] El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page.
-        - el sitio incluye las siguientes páginas: 
+       - el sitio incluye las siguientes páginas: 
             - 🏠 Inicio
             - 📸 Galería
             - 🐨 Diversión
