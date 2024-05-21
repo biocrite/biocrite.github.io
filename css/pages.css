@@ -20,10 +20,12 @@ h2 {
 h1 {
     color: var(--texto-color2);
 }
-h1:before, h1:after {
-    content: "  🌺  "
-}
 
+@media screen and (800px < width) {
+        h1:before, h1:after {
+        content: " 🌺 "
+    }
+}
 h2 {
     color: var(--texto-color3);
 }
