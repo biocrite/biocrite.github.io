@@ -212,7 +212,7 @@ main {
 }
 
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
-/*⁑⁑⁑⁑⁑⁑⁑    Media Query para tablets y Compus    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑  Media Query para tablets y Escritorios ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 
 /* Celulares */
@@ -221,7 +221,7 @@ main {
 /* Tablets */
 @media screen and (480px < width <= 800px) {}
 
-/* Computadoras */
+/* escritorios */
 @media screen and (800px < width) {
     .onlySmallScreens {
         display: none;

@@ -50,7 +50,7 @@
 
 
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
-/*⁑⁑⁑⁑⁑⁑    Media Query para Tablets y Compus      ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑    Media Query para Tablets y Escritorios  ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 
 /* celulares */
@@ -73,7 +73,7 @@
     }
 }
 
-/* computadoras */
+/* escritorios */
 @media screen and (800px < width) {
     .galeriaItem {
         width: 32%; /* Fracción de cuántas imágenes por fila */ 
