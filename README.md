@@ -7,7 +7,6 @@
 **Temática:** Koalas
 
 ## Criterios de Evaluación
-## Criterios de Evaluación
 
 * [x] El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page.
   * El sitio incluye las siguientes páginas:
