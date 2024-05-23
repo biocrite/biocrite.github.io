@@ -121,7 +121,7 @@ input.btn-img:hover, .page-btn img:hover {
 }
 
 .datoDisplayer {
-    min-height: 8rem;
+    min-height: 8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
