@@ -9,7 +9,7 @@ h1,
 h2,
 p,
 main li {
-    margin: .2rem 1rem .8rem 1rem;
+    margin: .1rem 1rem .8rem 1rem;
 }
 
 h1,
@@ -136,8 +136,6 @@ input.btn-img:hover, .page-btn img:hover {
     font-size: clamp(2rem, 12vw, 6rem);
     font-weight: 500;
     line-height: 100%;
-    text-shadow: -1px -1px 0 white,
-        1px -1px 0 darkblue,
-        -1px 1px 0 black,
-        1px 1px 0 darkred;
+    text-shadow: 1px 1px 3px black,
+        -1px -1px 3px gold;
 }
