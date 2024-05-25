@@ -19,7 +19,8 @@ const nombres = [
     "Coco",
     "Paz",
     "Rodri",
-    "Bella" ];
+    "Bella",
+    "Lolô" ];
 
 //apellidos posibles
 const apellidos = [
