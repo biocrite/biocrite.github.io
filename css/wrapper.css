@@ -57,6 +57,16 @@ body, .wrapper {
     text-align: left;
 }
 
+.invisible {
+    visibility: hidden;
+}
+.clickable {
+    cursor: pointer;
+}
+.onlyBigScreens {
+    display: none;
+}
+
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Header (navbar) & Footer    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
 /*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
@@ -68,7 +78,6 @@ body, .wrapper {
 .headerImage {
     width: 100%;
 }
-
 
 /* Navbar */
 .navmenu {
@@ -85,7 +94,7 @@ body, .wrapper {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    transition-duration: 200ms;
+    transition-duration: 500ms;
     font-size: larger;
     list-style: none;
     z-index: 5;
@@ -93,6 +102,20 @@ body, .wrapper {
 }
 .navmenu li {
     padding: 1rem;
+}
+.navmenu li:hover{
+    transform: scale(1.03);
+    z-index: 5;
+}
+.navmenu li:hover .subnavmenu{
+    transform: scale(.98);
+    z-index: 5;
+}
+.navmenu li img {
+    max-height: 2em;
+    max-width: 2em;
+    margin: -5% 0;
+    padding-right: 0%;
 }
 .subnavmenu {
     list-style: none;
@@ -102,23 +125,28 @@ body, .wrapper {
 .subnavmenu li a {
     color: var(--texto-color2);
 }
-.onlyBigScreens {
-    display: none;
-}
+
 #navBarExpander {
-    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2.5rem;
     text-align: right;
-    margin-right: .5rem;
+    margin: 0 .5rem 0 0;
+    padding: 0;
     z-index: 5;
 }
-.navmenu li a, .clickable {
-    cursor: pointer;
-}
-.navmenu a{
+
+
+/* Header & Footer enlaces */
+header a,
+footer a{
     text-decoration: none;
     color: var(--body-color);
+    cursor: pointer;
 }
-.navmenu a:hover,
+
+header a:hover,
 footer a:hover {
     color: darkgoldenrod;
     transition-duration: 300ms;
@@ -131,8 +159,6 @@ footer {
     color: var(--texto-color2);
 }
 footer a {
-    text-decoration: none;
-    color: var(--body-color);
     font-weight:400;
 }
 
@@ -150,7 +176,7 @@ main {
     border: var(--main-border);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    animation: fadeInAnimation ease 1.5s;
+    animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -242,7 +268,7 @@ main {
         align-items: unset;
         text-align: unset;
         font-size: unset;
-        padding: unset;
+        padding: 1em 0 0 0;
         overflow: unset;
         display: flex!important;
         flex-direction: row;
@@ -258,7 +284,7 @@ main {
 
     .subnavmenu {
         position: absolute;
-        margin-left: -3rem;
+        margin-left: -5%;
         background-color: var(--body-bgcolor);
         border: 1px solid black;
         border-top: 0;
@@ -267,6 +293,7 @@ main {
         border-radius: 0 0 4px 4px;
         z-index: 5;
         padding: .5rem;
+        min-width: 200%;
     }
 
     .subnavmenu li {
