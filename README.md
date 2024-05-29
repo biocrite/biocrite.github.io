@@ -74,6 +74,9 @@
       * `<nav>`
     * `<main>`
       * `<section>`
+      * `<h1>, <h2>, <p>`
+      * `<a>`
+      * `<ul>, <ol>, <li>`
       * `<figure>`
         * `<figcaption>`
       * `<form>`
