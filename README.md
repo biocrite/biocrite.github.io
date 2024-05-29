@@ -1,10 +1,8 @@
-# Codo a Codo - Proyecto Final
+# Koala Mundia
+*Codo a codo 4.0 / Node.js / Comisión 24.126*
+*Primer cuatrimestre de 2024*
 
-**Nombre del sitio:** Koala Mundia
-
-**Fecha de entrega:** 26 de mayo
-
-**Temática:** Koalas
+Primera entrega para el curso de Full Stack - Desarollo Web (Javascript/Node.js) dictado por Gabriel Múñoz.
 
 ## Criterios de Evaluación
 
