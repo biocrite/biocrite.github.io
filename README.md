@@ -1,5 +1,6 @@
 # Koala Mundia
 *Codo a codo 4.0 / Node.js / Comisión 24.126*
+
 *Primer cuatrimestre de 2024*
 
 Primera entrega para el curso de Full Stack - Desarollo Web (Javascript/Node.js) dictado por Gabriel Múñoz.
