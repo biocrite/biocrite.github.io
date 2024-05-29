@@ -105,7 +105,7 @@ body, .wrapper {
     display: none;
     background-color: var(--navmenu-mobile-bgcolor);
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
     transition-duration: 500ms;
@@ -113,9 +113,6 @@ body, .wrapper {
     list-style: none;
     z-index: 5;
     overflow-y: scroll;
-}
-.navmenu li {
-    padding: 1.5vh;
 }
 .navmenu li:hover{
     transform: scale(1.03);

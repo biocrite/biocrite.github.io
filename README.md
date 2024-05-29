@@ -18,7 +18,7 @@
       * ✨ Koala TV ✨
     * 🫂 Quiénes Somos
     * 💬 Contacto
-    * Confirmación de Formulario Enviado
+      * Confirmación de Formulario Enviado
     * Política de Privacidad
     * Términos de Uso
   * El header y el footer están almacenados en `/wrapper`
@@ -38,9 +38,9 @@
 * [x] Tener al menos una página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). Para el diseño debe usarse CSS.
   * La disposición del menú (horizontal / hamburguesa) se decide mediante `@media` query en `/css/wrapper.css`
   * También hay tres puntos de corte mediante `@media` query para la galería en `/css/galeria.css`
-    * mobile: disposición vertical (una foto por fila, texto debajo)
-    * tablet: disposición semi-vertical (una foto por fila y texto al lado)
-    * escritorio: disposición semi-horizontal, (tres fotos por fila, texto debajo)
+    * *celular*: disposición vertical (una foto por fila, texto debajo)
+    * *tablet*: disposición semi-vertical (una foto por fila y texto al lado)
+    * *PC escritorio*: disposición semi-horizontal, (tres fotos por fila, texto debajo)
 
 * [x] Utilizar al menos una animación, transformación o una transición.
   * Animación
@@ -54,13 +54,13 @@
     * La estructura general de las páginas
     * El dimmer / lightbox que aparece al hacer click en ciertas imágenes del sitio (como en la galería)
     * Dentro de la galería para la disposición de cada `<figure>`
-    * En el formulario de contacto
-    * En la caja `.boxy` de las págines de diversión
+    * El formulario de contacto
+    * La caja `.boxy` de las págines de diversión
 
 * [x] Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon.
   * La página es legible y presentable
   * La navegación está funcionando bien con menú hamburguesa para diapositivos con pantallas más pequeñas
-  * Hay un favicon enlazado en cada página mediante `/js/main.js`
+  * Hay un favicon enlazado a cada página mediante `/js/main.js`
 
 * [x] El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio)
   * Repositorio: <https://github.com/biocrite/biocrite.github.io>
@@ -70,13 +70,13 @@
 
 * [x] El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de <https://validator.w3.org/> sin errores. (Mandatorio)
   * Se usaron las siguientes etiquetas semánticas:
-    * `<head>`
-    * `<nav>`
+    * `<header>`
+      * `<nav>`
     * `<main>`
-    * `<section>`
-    * `<figure>`
-      * `<figcaption>`
-    * `<form>`
+      * `<section>`
+      * `<figure>`
+        * `<figcaption>`
+      * `<form>`
     * `<footer>`
   * El sitio web pasó la validación de W3.org
 
